@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+    # Vite
+    vite-template:
+        container_name: vite-template
+        build:
+            context: ./vite
+            dockerfile: Dockerfile
+        image: vite-template:1.0
+        ports:
+            - 95:5000 # Dev
+            - 96:5001 # Preview
+        environment:
+            HOST: 0.0.0.0
+        volumes:
+            - ./vite:/home/app
+            - /home/app/node_modules
+        working_dir: /home/app
+        # command: tail -F anything
+        command: npm run dev
