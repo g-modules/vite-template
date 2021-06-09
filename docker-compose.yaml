@@ -9,8 +9,8 @@ services:
             dockerfile: Dockerfile
         image: vite-template:1.0
         ports:
-            - 95:5000 # Dev
-            - 96:5001 # Preview
+            - 88:5000 # Dev
+            - 89:5001 # Preview
         environment:
             HOST: 0.0.0.0
         volumes:
