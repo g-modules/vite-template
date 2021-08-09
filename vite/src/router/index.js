@@ -14,6 +14,7 @@ const routes = [
 		redirect: { name: "Main" },
 	}
 ]
+
 export default createRouter({
 	history: createWebHistory(),
 	routes
