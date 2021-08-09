@@ -11,11 +11,11 @@ export default defineConfig({
 		host: '0.0.0.0',
 		hmr: {
 			host: 'localhost',
-			port: 88,
+			port: 81,
 		}
 	},
 	build: {
-		chunkSizeWarningLimit: 50,
+		chunkSizeWarningLimit: 100,
 		manifest: true,
 	},
 	resolve: {

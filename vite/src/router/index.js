@@ -1,7 +1,7 @@
 import { createWebHistory, createRouter } from "vue-router"
 
 // Views
-const main = () => import('~/views/view-main.vue')
+const main = () => import("~/views/view-main.vue")
 
 // Routes
 const routes = [

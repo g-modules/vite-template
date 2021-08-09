@@ -1,5 +1,5 @@
 # Vite Template
-npm run dev
+`npm run dev`
 
-Port 88 - Dev Server
-Port 89 - Preview Server
+Port 81 - Dev Server
+Port 82 - Preview Server
