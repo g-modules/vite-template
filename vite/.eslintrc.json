@@ -1,0 +1,3 @@
+{
+    "extends": "@g-modules/eslint-config"
+}

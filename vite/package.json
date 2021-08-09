@@ -6,7 +6,9 @@
 		"dev": "vite",
 		"build": "vite build",
 		"serve": "vite preview --port 5001",
-		"preview": "vite build && vite preview --port 5001"
+		"preview": "vite build && vite preview --port 5001",
+		"lint": "eslint ./src --ext .js",
+		"lint:fix": "eslint ./src --ext .js --fix"
 	},
 	"dependencies": {
 		"nib": "^1.1.2",
@@ -16,6 +18,8 @@
 		"vue-router": "^4.0.8"
 	},
 	"devDependencies": {
+		"@g-modules/eslint-config": "latest",
+		"eslint": "7.32.0",
 		"@vitejs/plugin-vue": "^1.2.2",
 		"@vue/compiler-sfc": "^3.0.11",
 		"vite": "^2.3.6"
