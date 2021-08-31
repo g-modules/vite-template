@@ -3,9 +3,9 @@ version: '3.9'
 services:
     # Vite
     vite:
-        container_name: ${PROJECT}
+        container_name: ${INSTANCE_NAME}
         build: .
-        image: ${PROJECT}:0.1
+        image: ${INSTANCE_NAME}:1.0
         ports:
             - 80:5000 # Preview
             - 81:5001 # Dev

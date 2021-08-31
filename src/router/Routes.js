@@ -1,16 +1,16 @@
 import { createWebHistory, createRouter } from "vue-router";
 
 // views
-const main = () => import( "~/views/view-main.vue" );
+const ViewStart = () => import( "~/views/ViewStart.vue" );
 
 // routes
 const routes = [{
 	"path": "/",
-	"name": "Main",
-	"component": main
+	"name": "ViewStart",
+	"component": ViewStart
 }, {
 	"path": "/:pathMatch(.*)*",
-	"redirect": { "name": "Main" }
+	"redirect": { "name": "ViewStart" }
 }];
 
 export default createRouter({

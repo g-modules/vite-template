@@ -2,5 +2,9 @@
     "extends": [
         "@g-modules/eslint-config",
         "plugin:vue/vue3-recommended"
-    ]
+    ],
+    "rules": {
+		"id-match":["error", "^[^_]+$", { "ignoreDestructuring": true }],
+		"id-length": ["error", { "min": 3, "properties": "never" , "exceptions": ["a", "b", "c", "x", "y", "i", "l", "key", "id"]}]
+	}
 }
